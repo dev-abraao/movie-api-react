@@ -1,0 +1,31 @@
+
+.head{
+    display: flex;
+    color: white;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+span{
+    color: #ff0000;
+}
+
+.head h1{
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+a{
+    transition: 300ms;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+a:visited, a:active, a:link{
+    text-decoration: none;
+}
