@@ -7,6 +7,7 @@ import "./movie.css";
 function Movie() {
   const { id } = useParams();
   const [movieID, setMovieID] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchMovie() {
@@ -15,7 +16,7 @@ function Movie() {
       );
       const data = await response.json();
       setMovieID(data);
-      console.log(data);
+      setLoading(false);
     }
     fetchMovie();
   }, [id]);
@@ -23,6 +24,8 @@ function Movie() {
   return (
     <>
       <Header />
+      {loading ? (<div></div>
+) : (
       <div className="wrapper">
         <div className="movie-wrapper">
             <div className="img-wrapper">
@@ -49,6 +52,7 @@ function Movie() {
             </div>
         </div>
       </div>
+      )}
     </>
   );
 }
