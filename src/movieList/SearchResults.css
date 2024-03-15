@@ -1,4 +1,5 @@
 ul{
+    visibility: hidden;
     padding: 40px;
 }
 
@@ -12,9 +13,8 @@ ul li{
     padding-bottom: 25px;
 }   
 
-img{
+.img-found{
     cursor: pointer;
-    height: 300px;
     width: 310px;
     height: 455px;
     padding: 0px;
@@ -22,7 +22,7 @@ img{
     transition: 500ms;
 }
 
-img:hover{
+.img-found:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 25px 10px rgb(168, 0, 0);
 }

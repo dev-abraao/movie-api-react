@@ -11,7 +11,6 @@ function SearchHero(){
             if (searchTerm){
                 const response = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=7fdec854`)
                 const data = await response.json();
-                console.log(data)
                 setSearchResults(data.Search || []);
             }
         }
@@ -21,6 +20,7 @@ function SearchHero(){
     function handleSearch(event){
         event.preventDefault();
         setSearchTerm(event.target.search.value)
+        document.getElementById('movie-list').style.visibility = "visible"
     }
 
 

@@ -28,13 +28,11 @@ function Movie() {
 ) : (
       <div className="wrapper">
         <div className="movie-wrapper">
-            <div className="img-wrapper">
             {movieID.Poster !== "N/A" ? (
                 <img src={movieID.Poster} alt="" />
             ) : (
                 <img src={placeholder} alt="" />
             )}
-            </div>
             <div className="details-wrapper">
                 <div className="titlerating">
                   <h2 className="title">{movieID.Title}</h2>
