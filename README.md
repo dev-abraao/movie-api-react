@@ -1,5 +1,3 @@
-My first React Project, using OMDB's API
+# Movies Info Using OMDB API
 
-The repo is currently begin hosted at : https://dev-abraao.github.io/movie-api-react/
-
-Thanks!
+Old project from back when i was studying react, not being hosted anymore ;D
